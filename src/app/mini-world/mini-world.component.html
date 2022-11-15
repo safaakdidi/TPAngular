@@ -1,0 +1,16 @@
+<p [ngStyle]="{
+'color':color,
+'font-size':size,
+'font-family':police
+}">mini-world works!</p>
+<input [(ngModel)]="color" type="color" class="input-group"  value="{{color}}">
+<input #sizeInput (change)="changeSize(sizeInput.value)" type="number" class="input-group" value="30">
+<select [(ngModel)]="police" id="police" name="police" class="input-group">
+  <option value="arial">Volvo</option>
+  <option value="Aileron">Aileron</option>
+  <option value="Garamond">Garamond</option>
+  <option value="Bookman">Bookman</option>
+</select>
+
+<input appRainbow type="text" class="input-group" >
+

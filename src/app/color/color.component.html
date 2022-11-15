@@ -1,0 +1,10 @@
+<app-fils [colorP]="bgColor" (sendDataToDad)="handleData($event)"></app-fils>
+
+<div [style.background-color]="bgColor" >
+  <h6>Hello EveryBody !</h6>
+</div>
+<input #newColor (change)="changeColor({color : newColor})" type="text" class="container">
+
+<!--automatiquement-->
+<!--<input [(ngModel)]="bgColor"  type="text" class="container">-->
+

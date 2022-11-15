@@ -1,0 +1,8 @@
+<div *ngIf="embauches.length">
+  <span *ngFor="let embauche of embauches">
+    <img  src="assets/images/{{ embauche.path|defaultImage }}"
+          width="150px" height="150px">
+    {{embauche?.name|titlecase}}
+    {{embauche?.firstname|uppercase}}
+  </span>
+</div>
